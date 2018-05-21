@@ -1,0 +1,7503 @@
+|Project2
+KEY[0] => p14.CLK
+KEY[0] => p13.CLK
+KEY[0] => p12.CLK
+KEY[0] => p11.CLK
+KEY[0] => p10.CLK
+KEY[0] => p9.CLK
+KEY[0] => p8.CLK
+KEY[0] => p7.CLK
+KEY[0] => p6.CLK
+KEY[0] => p5.CLK
+KEY[0] => p4.CLK
+KEY[0] => p3.CLK
+KEY[0] => p2.CLK
+KEY[0] => p1.CLK
+KEY[0] => d.CLK
+KEY[0] => c.CLK
+KEY[0] => b.CLK
+KEY[0] => a.CLK
+KEY[0] => reset1.CLK
+KEY[1] => reset2.CLK
+KEY[2] => ~NO_FANOUT~
+KEY[3] => ~NO_FANOUT~
+SW[0] => SW[0].IN3
+SW[1] => SW[1].IN3
+SW[2] => SW[2].IN3
+SW[3] => SW[3].IN3
+SW[4] => SW[4].IN3
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+SW[10] => ~NO_FANOUT~
+SW[11] => ~NO_FANOUT~
+SW[12] => ~NO_FANOUT~
+SW[13] => ~NO_FANOUT~
+SW[14] => ~NO_FANOUT~
+SW[15] => ~NO_FANOUT~
+SW[16] => SW[16].IN5
+SW[17] => SW[17].IN5
+LEDR[0] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[0] <= LEDG.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[1] <= LEDG.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[2] <= LEDG.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[3] <= LEDG.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[0] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[0] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[1] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[2] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[3] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[4] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[5] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[6] <= HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[0] <= HEX4.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[1] <= HEX4.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[2] <= HEX4.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[3] <= HEX4.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[4] <= HEX4.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[5] <= HEX4.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[6] <= HEX4.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[0] <= HEX5.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[1] <= HEX5.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[2] <= HEX5.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[3] <= HEX5.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[4] <= HEX5.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[5] <= HEX5.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[6] <= HEX5.DB_MAX_OUTPUT_PORT_TYPE
+HEX6[0] <= bcdToDisplay:U_Fiyat_Birler.port4
+HEX6[1] <= bcdToDisplay:U_Fiyat_Birler.port5
+HEX6[2] <= bcdToDisplay:U_Fiyat_Birler.port6
+HEX6[3] <= bcdToDisplay:U_Fiyat_Birler.port7
+HEX6[4] <= bcdToDisplay:U_Fiyat_Birler.port8
+HEX6[5] <= bcdToDisplay:U_Fiyat_Birler.port9
+HEX6[6] <= bcdToDisplay:U_Fiyat_Birler.port10
+HEX7[0] <= bcdToDisplay:U_Fiyat_Onlar.port4
+HEX7[1] <= bcdToDisplay:U_Fiyat_Onlar.port5
+HEX7[2] <= bcdToDisplay:U_Fiyat_Onlar.port6
+HEX7[3] <= bcdToDisplay:U_Fiyat_Onlar.port7
+HEX7[4] <= bcdToDisplay:U_Fiyat_Onlar.port8
+HEX7[5] <= bcdToDisplay:U_Fiyat_Onlar.port9
+HEX7[6] <= bcdToDisplay:U_Fiyat_Onlar.port10
+
+
+|Project2|mux4x1:m4_0
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|mux4x1:m4_0|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|mux4x1:m4_0|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|mux4x1:m4_0|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|mux4x1:m4_1
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|mux4x1:m4_1|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|mux4x1:m4_1|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|mux4x1:m4_1|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|mux4x1:m4_2
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|mux4x1:m4_2|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|mux4x1:m4_2|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|mux4x1:m4_2|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|mux4x1:m4_3
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|mux4x1:m4_3|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|mux4x1:m4_3|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|mux4x1:m4_3|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|mux4x1:m4_4
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|mux4x1:m4_4|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|mux4x1:m4_4|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|mux4x1:m4_4|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|compare5bit:cp5_0
+x0 => isEqual.IN0
+x0 => isSmall.IN0
+x1 => isEqual.IN0
+x1 => isSmall.IN0
+x2 => isEqual.IN0
+x2 => isSmall.IN0
+x3 => isEqual.IN0
+x3 => isSmall.IN0
+x4 => isEqual.IN0
+x4 => isSmall.IN0
+y0 => isEqual.IN1
+y0 => isSmall.IN1
+y1 => isEqual.IN1
+y1 => isSmall.IN1
+y2 => isEqual.IN1
+y2 => isSmall.IN1
+y3 => isEqual.IN1
+y3 => isSmall.IN1
+y4 => isEqual.IN1
+y4 => isSmall.IN1
+e <= e.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+b <= b.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|fulladder:f0
+S0 => N.IN0
+S1 => N.IN1
+S1 => Co.IN1
+Ci => S.IN1
+Ci => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|fulladder:f1
+S0 => N.IN0
+S1 => N.IN1
+S1 => Co.IN1
+Ci => S.IN1
+Ci => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|fulladder:f2
+S0 => N.IN0
+S1 => N.IN1
+S1 => Co.IN1
+Ci => S.IN1
+Ci => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|fulladder:f3
+S0 => N.IN0
+S1 => N.IN1
+S1 => Co.IN1
+Ci => S.IN1
+Ci => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|fulladder:f4
+S0 => N.IN0
+S1 => N.IN1
+S1 => Co.IN1
+Ci => S.IN1
+Ci => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris
+i0 => return7.DATAIN
+i1 => i1.IN5
+i2 => i2.IN5
+i3 => i3.IN5
+i4 => i4.IN5
+return0 <= <GND>
+return1 <= <GND>
+return2 <= mux16x1:A.port20
+return3 <= mux16x1:B.port20
+return4 <= mux16x1:C.port20
+return5 <= mux16x1:D.port20
+return6 <= mux16x1:E.port20
+return7 <= i0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:A
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN2
+s3 => s3.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+i8 => i8.IN1
+i9 => i9.IN1
+i10 => i10.IN1
+i11 => i11.IN1
+i12 => i12.IN1
+i13 => i13.IN1
+i14 => i14.IN1
+i15 => i15.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:A|mux8x1:A
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:A|mux8x1:A|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:A|mux8x1:A|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:A|mux8x1:A|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:A|mux8x1:A|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:A|mux8x1:A|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:A|mux8x1:A|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:A|mux8x1:A|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:A|mux8x1:A|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:A|mux8x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:A|mux8x1:B
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:A|mux8x1:B|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:A|mux8x1:B|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:A|mux8x1:B|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:A|mux8x1:B|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:A|mux8x1:B|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:A|mux8x1:B|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:A|mux8x1:B|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:A|mux8x1:B|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:A|mux8x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:B
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN2
+s3 => s3.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+i8 => i8.IN1
+i9 => i9.IN1
+i10 => i10.IN1
+i11 => i11.IN1
+i12 => i12.IN1
+i13 => i13.IN1
+i14 => i14.IN1
+i15 => i15.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:B|mux8x1:A
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:B|mux8x1:A|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:B|mux8x1:A|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:B|mux8x1:A|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:B|mux8x1:A|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:B|mux8x1:A|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:B|mux8x1:A|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:B|mux8x1:A|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:B|mux8x1:A|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:B|mux8x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:B|mux8x1:B
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:B|mux8x1:B|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:B|mux8x1:B|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:B|mux8x1:B|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:B|mux8x1:B|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:B|mux8x1:B|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:B|mux8x1:B|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:B|mux8x1:B|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:B|mux8x1:B|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:B|mux8x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:C
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN2
+s3 => s3.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+i8 => i8.IN1
+i9 => i9.IN1
+i10 => i10.IN1
+i11 => i11.IN1
+i12 => i12.IN1
+i13 => i13.IN1
+i14 => i14.IN1
+i15 => i15.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:C|mux8x1:A
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:C|mux8x1:A|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:C|mux8x1:A|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:C|mux8x1:A|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:C|mux8x1:A|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:C|mux8x1:A|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:C|mux8x1:A|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:C|mux8x1:A|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:C|mux8x1:A|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:C|mux8x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:C|mux8x1:B
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:C|mux8x1:B|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:C|mux8x1:B|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:C|mux8x1:B|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:C|mux8x1:B|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:C|mux8x1:B|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:C|mux8x1:B|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:C|mux8x1:B|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:C|mux8x1:B|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:C|mux8x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:C|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:D
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN2
+s3 => s3.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+i8 => i8.IN1
+i9 => i9.IN1
+i10 => i10.IN1
+i11 => i11.IN1
+i12 => i12.IN1
+i13 => i13.IN1
+i14 => i14.IN1
+i15 => i15.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:D|mux8x1:A
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:D|mux8x1:A|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:D|mux8x1:A|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:D|mux8x1:A|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:D|mux8x1:A|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:D|mux8x1:A|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:D|mux8x1:A|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:D|mux8x1:A|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:D|mux8x1:A|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:D|mux8x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:D|mux8x1:B
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:D|mux8x1:B|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:D|mux8x1:B|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:D|mux8x1:B|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:D|mux8x1:B|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:D|mux8x1:B|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:D|mux8x1:B|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:D|mux8x1:B|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:D|mux8x1:B|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:D|mux8x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:D|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:E
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN2
+s3 => s3.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+i8 => i8.IN1
+i9 => i9.IN1
+i10 => i10.IN1
+i11 => i11.IN1
+i12 => i12.IN1
+i13 => i13.IN1
+i14 => i14.IN1
+i15 => i15.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:E|mux8x1:A
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:E|mux8x1:A|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:E|mux8x1:A|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:E|mux8x1:A|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:E|mux8x1:A|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:E|mux8x1:A|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:E|mux8x1:A|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:E|mux8x1:A|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:E|mux8x1:A|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:E|mux8x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:E|mux8x1:B
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:E|mux8x1:B|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:E|mux8x1:B|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:E|mux8x1:B|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:E|mux8x1:B|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:E|mux8x1:B|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:E|mux8x1:B|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:E|mux8x1:B|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:E|mux8x1:B|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:E|mux8x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Giris|mux16x1:E|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler
+i0 => i0.IN4
+i1 => i1.IN7
+i2 => i2.IN7
+i3 => i3.IN7
+return0 <= mux8x1:A.port11
+return1 <= mux8x1:B.port11
+return2 <= mux8x1:C.port11
+return3 <= mux8x1:D.port11
+return4 <= mux8x1:E.port11
+return5 <= mux8x1:F.port11
+return6 <= mux8x1:G.port11
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:A
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:A|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:A|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:A|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:A|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:A|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:A|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:A|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:A|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:B
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:B|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:B|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:B|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:B|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:B|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:B|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:B|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:B|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:C
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:C|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:C|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:C|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:C|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:C|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:C|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:C|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:C|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:C|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:D
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:D|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:D|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:D|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:D|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:D|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:D|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:D|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:D|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:D|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:E
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:E|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:E|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:E|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:E|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:E|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:E|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:E|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:E|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:E|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:F
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:F|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:F|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:F|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:F|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:F|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:F|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:F|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:F|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:F|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:G
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:G|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:G|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:G|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:G|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:G|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:G|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:G|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:G|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Birler|mux8x1:G|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar
+i0 => i0.IN4
+i1 => i1.IN7
+i2 => i2.IN7
+i3 => i3.IN7
+return0 <= mux8x1:A.port11
+return1 <= mux8x1:B.port11
+return2 <= mux8x1:C.port11
+return3 <= mux8x1:D.port11
+return4 <= mux8x1:E.port11
+return5 <= mux8x1:F.port11
+return6 <= mux8x1:G.port11
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:A
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:A|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:A|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:A|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:A|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:A|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:A|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:A|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:A|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:B
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:B|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:B|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:B|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:B|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:B|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:B|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:B|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:B|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:C
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:C|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:C|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:C|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:C|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:C|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:C|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:C|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:C|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:C|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:D
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:D|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:D|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:D|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:D|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:D|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:D|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:D|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:D|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:D|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:E
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:E|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:E|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:E|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:E|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:E|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:E|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:E|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:E|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:E|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:F
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:F|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:F|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:F|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:F|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:F|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:F|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:F|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:F|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:F|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:G
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:G|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:G|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:G|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:G|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:G|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:G|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:G|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:G|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Giris_Onlar|mux8x1:G|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat
+i0 => return7.DATAIN
+i1 => i1.IN5
+i2 => i2.IN5
+i3 => i3.IN5
+i4 => i4.IN5
+return0 <= <GND>
+return1 <= <GND>
+return2 <= mux16x1:A.port20
+return3 <= mux16x1:B.port20
+return4 <= mux16x1:C.port20
+return5 <= mux16x1:D.port20
+return6 <= mux16x1:E.port20
+return7 <= i0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:A
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN2
+s3 => s3.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+i8 => i8.IN1
+i9 => i9.IN1
+i10 => i10.IN1
+i11 => i11.IN1
+i12 => i12.IN1
+i13 => i13.IN1
+i14 => i14.IN1
+i15 => i15.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:A|mux8x1:A
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:A|mux8x1:A|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:A|mux8x1:A|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:A|mux8x1:A|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:A|mux8x1:A|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:A|mux8x1:A|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:A|mux8x1:A|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:A|mux8x1:A|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:A|mux8x1:A|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:A|mux8x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:A|mux8x1:B
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:A|mux8x1:B|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:A|mux8x1:B|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:A|mux8x1:B|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:A|mux8x1:B|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:A|mux8x1:B|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:A|mux8x1:B|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:A|mux8x1:B|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:A|mux8x1:B|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:A|mux8x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:B
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN2
+s3 => s3.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+i8 => i8.IN1
+i9 => i9.IN1
+i10 => i10.IN1
+i11 => i11.IN1
+i12 => i12.IN1
+i13 => i13.IN1
+i14 => i14.IN1
+i15 => i15.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:B|mux8x1:A
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:B|mux8x1:A|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:B|mux8x1:A|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:B|mux8x1:A|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:B|mux8x1:A|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:B|mux8x1:A|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:B|mux8x1:A|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:B|mux8x1:A|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:B|mux8x1:A|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:B|mux8x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:B|mux8x1:B
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:B|mux8x1:B|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:B|mux8x1:B|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:B|mux8x1:B|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:B|mux8x1:B|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:B|mux8x1:B|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:B|mux8x1:B|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:B|mux8x1:B|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:B|mux8x1:B|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:B|mux8x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:C
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN2
+s3 => s3.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+i8 => i8.IN1
+i9 => i9.IN1
+i10 => i10.IN1
+i11 => i11.IN1
+i12 => i12.IN1
+i13 => i13.IN1
+i14 => i14.IN1
+i15 => i15.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:C|mux8x1:A
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:C|mux8x1:A|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:C|mux8x1:A|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:C|mux8x1:A|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:C|mux8x1:A|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:C|mux8x1:A|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:C|mux8x1:A|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:C|mux8x1:A|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:C|mux8x1:A|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:C|mux8x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:C|mux8x1:B
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:C|mux8x1:B|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:C|mux8x1:B|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:C|mux8x1:B|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:C|mux8x1:B|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:C|mux8x1:B|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:C|mux8x1:B|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:C|mux8x1:B|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:C|mux8x1:B|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:C|mux8x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:C|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:D
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN2
+s3 => s3.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+i8 => i8.IN1
+i9 => i9.IN1
+i10 => i10.IN1
+i11 => i11.IN1
+i12 => i12.IN1
+i13 => i13.IN1
+i14 => i14.IN1
+i15 => i15.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:D|mux8x1:A
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:D|mux8x1:A|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:D|mux8x1:A|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:D|mux8x1:A|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:D|mux8x1:A|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:D|mux8x1:A|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:D|mux8x1:A|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:D|mux8x1:A|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:D|mux8x1:A|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:D|mux8x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:D|mux8x1:B
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:D|mux8x1:B|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:D|mux8x1:B|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:D|mux8x1:B|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:D|mux8x1:B|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:D|mux8x1:B|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:D|mux8x1:B|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:D|mux8x1:B|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:D|mux8x1:B|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:D|mux8x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:D|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:E
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN2
+s3 => s3.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+i8 => i8.IN1
+i9 => i9.IN1
+i10 => i10.IN1
+i11 => i11.IN1
+i12 => i12.IN1
+i13 => i13.IN1
+i14 => i14.IN1
+i15 => i15.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:E|mux8x1:A
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:E|mux8x1:A|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:E|mux8x1:A|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:E|mux8x1:A|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:E|mux8x1:A|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:E|mux8x1:A|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:E|mux8x1:A|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:E|mux8x1:A|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:E|mux8x1:A|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:E|mux8x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:E|mux8x1:B
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:E|mux8x1:B|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:E|mux8x1:B|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:E|mux8x1:B|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:E|mux8x1:B|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:E|mux8x1:B|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:E|mux8x1:B|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:E|mux8x1:B|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:E|mux8x1:B|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:E|mux8x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:U_Fiyat|mux16x1:E|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler
+i0 => i0.IN4
+i1 => i1.IN7
+i2 => i2.IN7
+i3 => i3.IN7
+return0 <= mux8x1:A.port11
+return1 <= mux8x1:B.port11
+return2 <= mux8x1:C.port11
+return3 <= mux8x1:D.port11
+return4 <= mux8x1:E.port11
+return5 <= mux8x1:F.port11
+return6 <= mux8x1:G.port11
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:A
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:A|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:A|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:A|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:A|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:A|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:A|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:A|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:A|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:B
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:B|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:B|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:B|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:B|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:B|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:B|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:B|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:B|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:C
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:C|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:C|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:C|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:C|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:C|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:C|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:C|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:C|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:C|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:D
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:D|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:D|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:D|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:D|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:D|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:D|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:D|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:D|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:D|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:E
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:E|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:E|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:E|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:E|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:E|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:E|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:E|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:E|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:E|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:F
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:F|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:F|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:F|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:F|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:F|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:F|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:F|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:F|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:F|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:G
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:G|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:G|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:G|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:G|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:G|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:G|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:G|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:G|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Birler|mux8x1:G|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar
+i0 => i0.IN4
+i1 => i1.IN7
+i2 => i2.IN7
+i3 => i3.IN7
+return0 <= mux8x1:A.port11
+return1 <= mux8x1:B.port11
+return2 <= mux8x1:C.port11
+return3 <= mux8x1:D.port11
+return4 <= mux8x1:E.port11
+return5 <= mux8x1:F.port11
+return6 <= mux8x1:G.port11
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:A
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:A|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:A|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:A|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:A|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:A|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:A|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:A|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:A|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:B
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:B|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:B|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:B|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:B|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:B|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:B|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:B|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:B|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:C
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:C|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:C|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:C|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:C|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:C|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:C|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:C|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:C|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:C|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:D
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:D|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:D|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:D|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:D|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:D|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:D|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:D|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:D|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:D|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:E
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:E|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:E|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:E|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:E|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:E|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:E|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:E|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:E|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:E|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:F
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:F|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:F|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:F|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:F|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:F|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:F|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:F|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:F|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:F|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:G
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:G|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:G|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:G|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:G|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:G|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:G|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:G|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:G|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:U_Fiyat_Onlar|mux8x1:G|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu
+i0 => return7.DATAIN
+i1 => i1.IN5
+i2 => i2.IN5
+i3 => i3.IN5
+i4 => i4.IN5
+return0 <= <GND>
+return1 <= <GND>
+return2 <= mux16x1:A.port20
+return3 <= mux16x1:B.port20
+return4 <= mux16x1:C.port20
+return5 <= mux16x1:D.port20
+return6 <= mux16x1:E.port20
+return7 <= i0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:A
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN2
+s3 => s3.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+i8 => i8.IN1
+i9 => i9.IN1
+i10 => i10.IN1
+i11 => i11.IN1
+i12 => i12.IN1
+i13 => i13.IN1
+i14 => i14.IN1
+i15 => i15.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:A|mux8x1:A
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:A|mux8x1:A|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:A|mux8x1:A|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:A|mux8x1:A|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:A|mux8x1:A|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:A|mux8x1:A|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:A|mux8x1:A|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:A|mux8x1:A|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:A|mux8x1:A|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:A|mux8x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:A|mux8x1:B
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:A|mux8x1:B|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:A|mux8x1:B|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:A|mux8x1:B|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:A|mux8x1:B|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:A|mux8x1:B|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:A|mux8x1:B|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:A|mux8x1:B|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:A|mux8x1:B|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:A|mux8x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:B
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN2
+s3 => s3.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+i8 => i8.IN1
+i9 => i9.IN1
+i10 => i10.IN1
+i11 => i11.IN1
+i12 => i12.IN1
+i13 => i13.IN1
+i14 => i14.IN1
+i15 => i15.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:B|mux8x1:A
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:B|mux8x1:A|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:B|mux8x1:A|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:B|mux8x1:A|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:B|mux8x1:A|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:B|mux8x1:A|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:B|mux8x1:A|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:B|mux8x1:A|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:B|mux8x1:A|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:B|mux8x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:B|mux8x1:B
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:B|mux8x1:B|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:B|mux8x1:B|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:B|mux8x1:B|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:B|mux8x1:B|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:B|mux8x1:B|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:B|mux8x1:B|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:B|mux8x1:B|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:B|mux8x1:B|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:B|mux8x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:C
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN2
+s3 => s3.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+i8 => i8.IN1
+i9 => i9.IN1
+i10 => i10.IN1
+i11 => i11.IN1
+i12 => i12.IN1
+i13 => i13.IN1
+i14 => i14.IN1
+i15 => i15.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:C|mux8x1:A
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:C|mux8x1:A|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:C|mux8x1:A|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:C|mux8x1:A|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:C|mux8x1:A|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:C|mux8x1:A|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:C|mux8x1:A|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:C|mux8x1:A|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:C|mux8x1:A|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:C|mux8x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:C|mux8x1:B
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:C|mux8x1:B|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:C|mux8x1:B|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:C|mux8x1:B|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:C|mux8x1:B|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:C|mux8x1:B|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:C|mux8x1:B|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:C|mux8x1:B|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:C|mux8x1:B|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:C|mux8x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:C|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:D
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN2
+s3 => s3.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+i8 => i8.IN1
+i9 => i9.IN1
+i10 => i10.IN1
+i11 => i11.IN1
+i12 => i12.IN1
+i13 => i13.IN1
+i14 => i14.IN1
+i15 => i15.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:D|mux8x1:A
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:D|mux8x1:A|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:D|mux8x1:A|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:D|mux8x1:A|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:D|mux8x1:A|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:D|mux8x1:A|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:D|mux8x1:A|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:D|mux8x1:A|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:D|mux8x1:A|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:D|mux8x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:D|mux8x1:B
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:D|mux8x1:B|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:D|mux8x1:B|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:D|mux8x1:B|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:D|mux8x1:B|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:D|mux8x1:B|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:D|mux8x1:B|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:D|mux8x1:B|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:D|mux8x1:B|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:D|mux8x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:D|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:E
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN2
+s3 => s3.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+i8 => i8.IN1
+i9 => i9.IN1
+i10 => i10.IN1
+i11 => i11.IN1
+i12 => i12.IN1
+i13 => i13.IN1
+i14 => i14.IN1
+i15 => i15.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:E|mux8x1:A
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:E|mux8x1:A|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:E|mux8x1:A|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:E|mux8x1:A|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:E|mux8x1:A|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:E|mux8x1:A|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:E|mux8x1:A|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:E|mux8x1:A|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:E|mux8x1:A|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:E|mux8x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:E|mux8x1:B
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:E|mux8x1:B|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:E|mux8x1:B|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:E|mux8x1:B|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:E|mux8x1:B|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:E|mux8x1:B|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:E|mux8x1:B|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:E|mux8x1:B|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:E|mux8x1:B|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:E|mux8x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|binaryToBcd:P_Ustu|mux16x1:E|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler
+i0 => i0.IN4
+i1 => i1.IN7
+i2 => i2.IN7
+i3 => i3.IN7
+return0 <= mux8x1:A.port11
+return1 <= mux8x1:B.port11
+return2 <= mux8x1:C.port11
+return3 <= mux8x1:D.port11
+return4 <= mux8x1:E.port11
+return5 <= mux8x1:F.port11
+return6 <= mux8x1:G.port11
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:A
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:A|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:A|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:A|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:A|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:A|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:A|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:A|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:A|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:B
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:B|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:B|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:B|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:B|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:B|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:B|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:B|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:B|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:C
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:C|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:C|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:C|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:C|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:C|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:C|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:C|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:C|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:C|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:D
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:D|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:D|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:D|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:D|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:D|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:D|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:D|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:D|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:D|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:E
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:E|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:E|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:E|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:E|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:E|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:E|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:E|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:E|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:E|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:F
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:F|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:F|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:F|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:F|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:F|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:F|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:F|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:F|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:F|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:G
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:G|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:G|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:G|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:G|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:G|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:G|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:G|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:G|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Birler|mux8x1:G|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar
+i0 => i0.IN4
+i1 => i1.IN7
+i2 => i2.IN7
+i3 => i3.IN7
+return0 <= mux8x1:A.port11
+return1 <= mux8x1:B.port11
+return2 <= mux8x1:C.port11
+return3 <= mux8x1:D.port11
+return4 <= mux8x1:E.port11
+return5 <= mux8x1:F.port11
+return6 <= mux8x1:G.port11
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:A
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:A|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:A|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:A|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:A|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:A|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:A|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:A|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:A|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:B
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:B|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:B|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:B|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:B|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:B|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:B|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:B|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:B|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:C
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:C|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:C|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:C|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:C|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:C|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:C|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:C|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:C|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:C|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:D
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:D|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:D|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:D|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:D|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:D|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:D|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:D|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:D|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:D|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:E
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:E|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:E|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:E|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:E|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:E|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:E|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:E|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:E|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:E|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:F
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:F|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:F|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:F|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:F|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:F|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:F|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:F|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:F|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:F|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:G
+s0 => s0.IN2
+s1 => s1.IN2
+s2 => s2.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+i4 => i4.IN1
+i5 => i5.IN1
+i6 => i6.IN1
+i7 => i7.IN1
+return <= mux2x1:C.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:G|mux4x1:A
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:G|mux4x1:A|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:G|mux4x1:A|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:G|mux4x1:A|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:G|mux4x1:B
+s0 => s0.IN2
+s1 => s1.IN1
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+return <= mux2x1:A.port3
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:G|mux4x1:B|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:G|mux4x1:B|mux2x1:B
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:G|mux4x1:B|mux2x1:A
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project2|bcdToDisplay:P_Ustu_Onlar|mux8x1:G|mux2x1:C
+s0 => return.IN0
+s0 => return.IN0
+i0 => return.IN1
+i1 => return.IN1
+return <= return.DB_MAX_OUTPUT_PORT_TYPE
+
+
